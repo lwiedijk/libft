@@ -13,6 +13,26 @@
 #include <stdlib.h>
 #include "libft.h"
 
+static int	ft_numlen_base(long value, int base)
+{
+	int	len;
+
+	len = 0;
+	if (value < 0)
+	{
+		value = value * -1;
+		len++;
+	}
+	if (value == 0)
+		len++;
+	while (value)
+	{
+		value = value / base;
+		len++;
+	}
+	return (len);
+}
+
 char	*ft_itoa_base(long long value, int base, char *hex_case)
 {
 	int		l;
