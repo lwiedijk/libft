@@ -25,7 +25,7 @@ static int	overflow(int plu_min, long long int result, const char *str, int i)
 		result = (result * 10) + (str[i] - '0');
 		return (result * plu_min);
 	}
-}STON
+}
 
 int			ft_atoi(const char *str)
 {
