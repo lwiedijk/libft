@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/06 18:27:09 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:06:24 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:07:24 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	if (!s)
 		return ;

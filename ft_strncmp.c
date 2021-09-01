@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/31 14:56:56 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:14:26 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:15:45 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 		{
 			i++;
 		}
-			else return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+		else
+			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 	}
 	return (0);
 }

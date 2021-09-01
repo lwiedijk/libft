@@ -6,13 +6,13 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/06 18:25:33 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:00:16 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 13:37:47 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int		malloc_size(long nb)
+int	malloc_size(long nb)
 {
 	int	len;
 
@@ -40,7 +40,7 @@ char	*ft_itoa(int n)
 
 	num = n;
 	l = malloc_size(num);
-	str = (char*)malloc(sizeof(char) * (l + 1));
+	str = (char *)malloc(sizeof(char) * (l + 1));
 	if (str == NULL)
 		return (NULL);
 	str[l] = '\0';

@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/06 18:23:35 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:18:14 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:17:46 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (s == NULL)
 		return (NULL);
-	ptr = (char*)malloc((len + 1) * sizeof(char));
+	ptr = (char *)malloc((len + 1) * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 	i = 0;
