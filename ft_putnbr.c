@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/07/29 15:34:54 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/07/29 19:34:09 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:06:05 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_putchar(char c)
 
 void	ft_putnbr(int nb)
 {
-	long i;
+	long	i;
 
 	i = nb;
 	if (nb == -2147483648)

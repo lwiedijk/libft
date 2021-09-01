@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/06 18:28:10 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/20 19:55:47 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:06:39 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long i;
+	long	i;
 
 	i = n;
 	if (n == -2147483648)

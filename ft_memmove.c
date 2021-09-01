@@ -6,11 +6,23 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/31 14:45:48 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:03:06 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/27 09:27:07 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdio.h>
+
+static void	*copy_backward(unsigned char *dstp,
+				const unsigned char *srcp, size_t len)
+{
+	while (len > 0)
+	{
+		len--;
+		dstp[len] = srcp[len];
+	}
+	return (dstp);
+}
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -23,11 +35,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	if (!dstp && !srcp)
 		return (NULL);
 	if (srcp < dstp)
-		while (len > 0)
-		{
-			len--;
-			dstp[len] = srcp[len];
-		}
+		return (copy_backward(dstp, srcp, len));
 	else
 	{
 		i = 0;

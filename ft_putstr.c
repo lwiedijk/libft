@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/07/22 16:24:40 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/07/22 16:28:24 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:07:08 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')

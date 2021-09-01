@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/06 18:24:46 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/12/04 20:46:16 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:17:29 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int	end(const char *str2, const char *trim2, int left)
 {
 	int	j;
 	int	substr_len;
-	int end_count;
+	int	end_count;
 
 	j = ft_strlen(str2);
 	end_count = 0;
@@ -58,7 +58,7 @@ static int	end(const char *str2, const char *trim2, int left)
 	return (substr_len);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*trimmed_str;
 	int		left;

@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/06 18:08:15 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:57:34 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 13:35:33 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,5 +31,5 @@ void	*ft_calloc(size_t count, size_t size)
 			i++;
 		}
 	}
-	return ((void*)ptr);
+	return ((void *)ptr);
 }

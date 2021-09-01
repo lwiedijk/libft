@@ -6,7 +6,7 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/11/06 18:25:09 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2020/11/28 10:08:21 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 15:10:28 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 static char	**ft_allocation_error(char **ptr)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (ptr[i] != NULL)
@@ -29,8 +29,8 @@ static char	**ft_allocation_error(char **ptr)
 
 static int	ft_string_count(const char *s, char dil_c)
 {
-	int count;
-	int i;
+	int	count;
+	int	i;
 
 	if (!s[0])
 		return (0);
@@ -47,7 +47,7 @@ static int	ft_string_count(const char *s, char dil_c)
 			{
 				i++;
 			}
-			continue;
+			continue ;
 		}
 		i++;
 	}
@@ -58,7 +58,7 @@ static int	ft_string_count(const char *s, char dil_c)
 
 static void	ft_the_strings(char **substr, unsigned int *substrlen, char c)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	*substr = *substr + *substrlen;
 	*substrlen = 0;
@@ -74,7 +74,7 @@ static void	ft_the_strings(char **substr, unsigned int *substrlen, char c)
 	}
 }
 
-char		**ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	char			**ptr;
 	char			*substr;
@@ -83,16 +83,16 @@ char		**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	ptr = (char**)malloc((ft_string_count(s, c) + 1) * sizeof(char*));
+	ptr = (char **)malloc((ft_string_count(s, c) + 1) * sizeof(char *));
 	if (ptr == NULL)
 		return (NULL);
 	i = 0;
-	substr = (char*)s;
+	substr = (char *)s;
 	substrlen = 0;
 	while (i < ft_string_count(s, c))
 	{
 		ft_the_strings(&substr, &substrlen, c);
-		ptr[i] = (char*)malloc((substrlen + 1) * sizeof(char));
+		ptr[i] = (char *)malloc((substrlen + 1) * sizeof(char));
 		if (!ptr[i])
 			return (ft_allocation_error(ptr));
 		ft_strlcpy(ptr[i], substr, substrlen + 1);
