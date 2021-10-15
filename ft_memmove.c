@@ -6,12 +6,13 @@
 /*   By: lwiedijk <marvin@codam.nl>                   +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2020/10/31 14:45:48 by lwiedijk      #+#    #+#                 */
-/*   Updated: 2021/08/27 09:27:07 by lwiedijk      ########   odam.nl         */
+/*   Updated: 2021/08/26 16:56:11 by lwiedijk      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include <stdio.h>
+#include "libft.h"
 
 static void	*copy_backward(unsigned char *dstp,
 				const unsigned char *srcp, size_t len)
