@@ -6,7 +6,7 @@
 #    By: lwiedijk <marvin@codam.nl>                   +#+                      #
 #                                                    +#+                       #
 #    Created: 2020/10/30 16:06:46 by lwiedijk      #+#    #+#                  #
-#    Updated: 2021/10/14 14:36:58 by lwiedijk      ########   odam.nl          #
+#    Updated: 2022/02/08 08:55:10 by lwiedijk      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,6 @@ SRCS = 			ft_atoi.c			\
 				ft_atol.c			\
 	  			ft_bzero.c			\
 	  			ft_calloc.c			\
-				ft_error.c			\
 	  			ft_isalnum.c		\
 	  			ft_isalpha.c		\
 	  			ft_isascii.c		\
@@ -44,6 +43,7 @@ SRCS = 			ft_atoi.c			\
 	  			ft_strchr.c			\
 	  			ft_strdup.c			\
 	  			ft_strjoin.c		\
+				ft_strjoin_free.c	\
 	  			ft_strlcat.c		\
 	  			ft_strlcpy.c		\
 	  			ft_strlen.c			\
@@ -64,6 +64,7 @@ SRCS = 			ft_atoi.c			\
 				ft_strjoin_free.c	\
 				ft_strcmp.c			\
 				ft_strcpy.c			\
+				get_next_line.c		\
 
 BONUS_FILES	=	ft_lstadd_front.c	\
 				ft_lstadd_back.c	\
@@ -102,7 +103,6 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rmdir -p $(OBJS_DIR)
 
 re:
 	$(MAKE) fclean
